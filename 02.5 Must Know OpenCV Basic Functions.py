@@ -1,3 +1,4 @@
+"""
 #                GRAY ga o'tkazish
    
 
@@ -69,3 +70,52 @@ cv2.imshow("Boshqacharoq", imgDialation)
 
 
 cv2.waitKey(0)
+
+"""
+#  Home Task
+
+"""
+1-Convert from default image to Grayscale
+2-Blur image
+3-Canny
+4-More practice with dialation 
+"""
+
+# Task 1
+"""
+import cv2
+
+img = cv2.imread('images/loki.jpg',0)
+img = cv2.resize(img, (400,300))
+
+cv2.imshow("winname", img)
+
+cv2.waitKey(0)
+"""
+
+# Task 2
+"""
+import cv2 
+
+img = cv2.resize(cv2.imread('images/road.jpg'), (400,300))
+img = cv2.GaussianBlur(img, (3,3), 0)
+
+cv2.imshow("winname", img)
+
+cv2.waitKey(0)
+"""
+
+# Task 3
+"""
+import cv2 
+
+img = cv2.resize(cv2.imread('images/road.jpg'), (400,300))
+cv2.imshow("winname 2", img)
+
+img = cv2.Canny(img, 100, 800)
+
+cv2.imshow("winname", img)
+
+cv2.waitKey(0)
+
+"""
